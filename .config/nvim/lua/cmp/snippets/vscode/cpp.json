@@ -1,0 +1,36 @@
+{
+  "snip1":
+  {
+    "prefix": "isock",
+    "body":[
+      "#include<sys/socket.h>",
+      "#include<sys/types.h>",
+      "#include<sys/stat.h>",
+      "#include<arpa/inet.h>",
+      "#include<netinet/in.h>",
+      "#include<unistd.h>",
+      "#include<errno.h>",
+      "#include<stdlib.h>",
+      "#include<stdio.h>",
+      "#include<string.h>",
+      "#include<assert.h>"
+    ],
+    "description" : "Code snippet for linux socket headers"
+ },
+  "snip2":
+  {
+    "prefix": "imain",
+    "body":[
+      "int main(int argc, char* argv[]){",
+      "   if(argc<=2){",
+      "       printf(\"usage: %s ip port\", basename(argv[0]));",
+      "       return 1;",
+      "   }",
+      "   const char* ip = argv[1];",
+      "   int port = atoi(argv[2])",
+      "   return 0;",
+      "}"
+    ],
+    "description" : "Code snippet for linux socket main"
+  }
+}
